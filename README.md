@@ -43,5 +43,4 @@ Homeschoolin
 Homeschooling
 ```
 
-Licensed under the MIT License.
-By Ignis Incendio.
+Licensed under the MIT License. By Ignis Incendio.
