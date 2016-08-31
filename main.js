@@ -13,7 +13,7 @@ function _generateMeme(first, second) {
         break;
     }
 
-    for (i = first.length; i > bouncedIndex + 1; i--) {
+    for (i = first.length; i > bouncedIndex; i--) {
       meme += first.substring(0, i) + "\n";
       console.log("First Index Count: " + i);
     }
