@@ -1,15 +1,29 @@
 function _generateMeme(first, second) {
   var meme = "";
   var i;
-  
-  for (i = first.length; i > 0; i--) {
-    meme += first.substring(0, i) + "\n";
+
+  var bouncedIndex = 0;
+
+  if (first != second) {
+    for (var count = 0; count < (first.length < second.length ? first.length : second.length); count++) {
+      if (first[count] == second[count])
+        bouncedIndex = count;
+      else
+        break;
+    }
+
+    for (i = first.length; i > bouncedIndex; i--) {
+      meme += first.substring(0, i) + "\n";
+    }
+
+    for (i = bouncedIndex + 2; i <= second.length; i++) {
+      meme += second.substring(0, i) + "\n";
+    }
   }
-  
-  for (i = 1; i <= second.length; i++) {
-    meme += second.substring(0, i) + "\n";
-  }
-  
+
+  else
+    return first;
+
   return meme;
 }
 
