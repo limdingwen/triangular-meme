@@ -1,5 +1,5 @@
 # Triangular Meme
-[Try it out here!](https://limdingwen.github.io/triangular-meme)
+[Try it out here!](https://IgnisIncendio.github.io/triangular-meme)
 
 Triangular Meme is a web app that lets you enter two phrases:
 ```
