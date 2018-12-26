@@ -1,11 +1,11 @@
 function _generateMeme(first, second) {
-  var meme = "";
-  var i;
+  let meme = "";
+  let i;
 
-  var bouncedIndex = 0;
+  let bouncedIndex = 0;
 
   if (first != second) {
-    for (var count = 0; count < (first.length < second.length ? first.length : second.length); count++) {
+    for (let count = 0; count < (first.length < second.length ? first.length : second.length); count++) {
       if (first[count] == second[count])
         bouncedIndex = count;
       else
